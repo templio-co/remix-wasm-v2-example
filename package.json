@@ -16,7 +16,6 @@
     "typecheck": "npx --yes turbo run typecheck",
     "format": "prettier --write .\"**/*.{js,jsx,ts,tsx,json,md}\""
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "turbo": "^1.10.15"

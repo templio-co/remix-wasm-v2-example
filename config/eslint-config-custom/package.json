@@ -1,0 +1,13 @@
+{
+  "name": "eslint-config-custom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@remix-run/eslint-config": "^2.0.1",
+    "eslint-config-prettier": "^9.0.0"
+  }
+}
