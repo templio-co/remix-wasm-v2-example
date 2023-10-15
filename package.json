@@ -1,0 +1,34 @@
+{
+  "name": "templio-co",
+  "version": "1.0.0",
+  "description": "Random apps with a random chat",
+  "main": "index.js",
+  "sideEffects": false,
+  "workspaces": [
+    "config/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "postinstall": "patch-package",
+    "build": "npx --yes turbo run build",
+    "dev": "npx --yes turbo run dev --parallel",
+    "lint": "npx --yes turbo run lint",
+    "typecheck": "npx --yes turbo run typecheck",
+    "format": "prettier --write .\"**/*.{js,jsx,ts,tsx,json,md}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "turbo": "^1.10.15"
+  },
+  "devDependencies": {
+    "patch-package": "^8.0.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=18.0.0"
+  },
+  "packageManager": "npm@9.0.0"
+}
