@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules
+
+# Build directory, cache & env files
+/.cache
+/build
+/public/build
+.env
+
+# IDE files
+/.idea

@@ -1,0 +1,9 @@
+# Generated files
+/target
+**/*.rs.bk
+Cargo.lock
+wasm-pack.log
+
+# Executables
+bin/
+pkg/
