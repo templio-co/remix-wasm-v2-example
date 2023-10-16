@@ -14,6 +14,11 @@ extern {
 }
 
 #[wasm_bindgen]
-pub fn greet() {
-    alert("Hello, templio-co!");
+pub fn greet(s: &str) {
+    alert(&format!("Hello, {}!", s));
+}
+
+#[wasm_bindgen]
+pub fn add(a: i32, b: i32) -> i32 {
+    a + b
 }

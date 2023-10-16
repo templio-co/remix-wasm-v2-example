@@ -1,0 +1,47 @@
+
+> rust-functions@0.1.0 build
+> npm run build:browser && npm run build:node
+
+
+> rust-functions@0.1.0 build:browser
+> wasm-pack build --target web --out-dir build/browser && rimraf build/browser/package.json
+
+[INFO]: 🎯  Checking for the Wasm target...
+[INFO]: 🌀  Compiling to Wasm...
+   Compiling templio-co v0.1.0 (/Users/omiewalls/RustroverProjects/templio-co/packages/rust-functions)
+warning: function `set_panic_hook` is never used
+ --> src/utils.rs:1:8
+  |
+1 | pub fn set_panic_hook() {
+  |        ^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(dead_code)]` on by default
+
+warning: `templio-co` (lib) generated 1 warning
+    Finished release [optimized] target(s) in 0.07s
+[INFO]: ⬇️  Installing wasm-bindgen...
+[INFO]: Optimizing wasm binaries with `wasm-opt`...
+[INFO]: Optional fields missing from Cargo.toml: 'description', 'repository', and 'license'. These are not necessary, but recommended
+[INFO]: ✨   Done in 0.27s
+[INFO]: 📦   Your wasm pkg is ready to publish at /Users/omiewalls/RustroverProjects/templio-co/packages/rust-functions/build/browser.
+
+> rust-functions@0.1.0 build:node
+> wasm-pack build --target nodejs --out-dir build/node && rimraf build/node/package.json
+
+[INFO]: 🎯  Checking for the Wasm target...
+[INFO]: 🌀  Compiling to Wasm...
+warning: function `set_panic_hook` is never used
+ --> src/utils.rs:1:8
+  |
+1 | pub fn set_panic_hook() {
+  |        ^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(dead_code)]` on by default
+
+warning: `templio-co` (lib) generated 1 warning
+    Finished release [optimized] target(s) in 0.01s
+[INFO]: ⬇️  Installing wasm-bindgen...
+[INFO]: Optimizing wasm binaries with `wasm-opt`...
+[INFO]: Optional fields missing from Cargo.toml: 'description', 'repository', and 'license'. These are not necessary, but recommended
+[INFO]: ✨   Done in 0.21s
+[INFO]: 📦   Your wasm pkg is ready to publish at /Users/omiewalls/RustroverProjects/templio-co/packages/rust-functions/build/node.

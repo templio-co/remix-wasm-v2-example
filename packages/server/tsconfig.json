@@ -22,6 +22,6 @@
     "paths": {
       "~/*": ["./app/*"]
     },
-    "moduleResolution": "node"
+    "moduleResolution": "node",
   }
 }

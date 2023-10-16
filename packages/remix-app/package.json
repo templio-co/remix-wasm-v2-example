@@ -3,6 +3,8 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
+  "main": "build/index.js",
+  "types": "./remix.env.d.ts",
   "scripts": {
     "build": "remix build",
     "dev": "remix dev --manual",
@@ -10,13 +12,15 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@hookstate/core": "^4.0.1",
     "@remix-run/css-bundle": "^2.0.1",
     "@remix-run/node": "^2.0.1",
     "@remix-run/react": "^2.0.1",
     "@remix-run/serve": "^2.0.1",
     "isbot": "^3.6.8",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "rust-functions": "*"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.0.1",
